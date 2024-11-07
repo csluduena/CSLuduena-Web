@@ -1,0 +1,123 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  color-scheme: dark;
+}
+
+/* Circuit Animation */
+.circuit-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.circuit-line {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0), rgba(56, 189, 248, 0.2), rgba(56, 189, 248, 0));
+  height: 1px;
+  width: 100px;
+  opacity: 0;
+  transform-origin: left center;
+  transition: all 0.5s ease;
+}
+
+.circuit-dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(56, 189, 248, 0.4);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(1px);
+}
+
+body {
+  @apply bg-dark-100 text-white;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    linear-gradient(to bottom right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom right, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  overflow-x: hidden;
+}
+
+#main-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+#main-content::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.3), transparent);
+  z-index: 1000;
+}
+
+.nav-glow {
+  position: relative;
+}
+
+.nav-glow::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color, #38bdf8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-glow:hover::after {
+  opacity: 1;
+}
+
+.card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.6), transparent);
+  transition: left 0.5s ease;
+}
+
+.card-glow:hover::before {
+  left: 100%;
+}
+
+/* Glowing cursor trail */
+.cursor-glow {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  backdrop-filter: blur(2px);
+}

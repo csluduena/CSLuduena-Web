@@ -1,0 +1,131 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí / Experiencia",
+        "portfolio": "Portafolio",
+        "contact": "Contáctame",
+        "downloadCV": "Descargar CV",
+        "language": "Idioma"
+    },
+    "hero": {
+        "role": "Desarrollador Full Stack",
+        "technologies": "JavaScript | Odoo | Salesforce"
+    },
+    "skills": {
+        "frontend": {
+            "title": "Frontend",
+            "description": "Creación de interfaces de usuario atractivas y funcionales con las últimas tecnologías web. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>HTML</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>CSS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>JavaScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>ReactJS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Bootstrap</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Tailwind</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ReactJS",
+                "Bootstrap",
+                "Tailwind",
+                "Odoo",
+                "Salesforce"
+            ]
+        },
+        "backend": {
+            "title": "Backend",
+            "description": "Construcción de bases sólidas y escalables para aplicaciones web, asegurando una funcionalidad perfecta y una gestión eficiente de datos. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Node.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>SQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>MongoDB</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Firebase</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Postman</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "technologies": [
+                "Node.js",
+                "SQL",
+                "MongoDB",
+                "Firebase",
+                "Postman",
+                "Odoo",
+                "Salesforce"
+            ]
+        },
+        "adaptable": {
+            "title": "Adaptable y Eficiente",
+            "description": "Soy una persona proactiva y recursiva que sobresale en entornos independientes, entregando constantemente trabajo de alta calidad con atención al detalle."
+        },
+        "supportive": {
+            "title": "Colaborador e Inclusivo",
+            "description": "Un colaborador amigable y efectivo que prospera en cualquier entorno de equipo, impulsando proyectos con comunicación fluida y un enfoque orientado a resultados."
+        },
+        "experience": {
+            "title": "Experiencia y Responsabilidad",
+            "description": "Experiencia, calidad, compromiso y responsabilidad. Eso es lo que encontrarás en mí, además de ser una persona amigable que se adapta fácilmente a los entornos de trabajo de manera cordial y eficiente."
+        }
+    },
+    "about": {
+        "intro": "Hola, soy Carlos Sebastian Ludueña",
+        "experience": {
+            "indie": {
+                "title": "Desarrollador Full Stack",
+                "company": "INDIE Argentina",
+                "period": "Enero 2023 - Presente",
+                "description": "Actualmente me desempeño como Full Stack Developer en INDIE Argentina, donde me especializo en el desarrollo y mantenimiento de sitios web a medida utilizando Odoo ERP. Mi rol se centra en la creación de soluciones integrales que abarcan frontend y backend, implementando funcionalidades complejas, diseñando interfaces atractivas y optimizando el rendimiento con las tecnologías más adecuadas. Contribuyo al éxito de proyectos web que generan un impacto positivo en los clientes."
+            },
+            "freelance": {
+                "title": "Desarrollo Web",
+                "company": "Freelance",
+                "period": "Diciembre 2011 - Presente",
+                "description": "Continúo mi labor como Desarrollador Web freelance, un camino que inicié con HTML y CSS puro y que me ha llevado a dominar tecnologías como React, JavaScript, Node.js y MariaDB. Además, he adquirido experiencia en testeos con Postman, el uso de Firebase y la creación de diseños responsive. He aprendido a comunicarme eficazmente con los clientes y a ofrecer soluciones a medida."
+            },
+            "st-computacion": {
+                "title": "Community Manager",
+                "company": "ST Computacion",
+                "period": "Agosto 2011 - Diciembre 2022",
+                "description": "Mi experiencia como Community Manager me ha brindado un profundo conocimiento del ecosistema digital y las estrategias de marketing online. Desarrollé habilidades de comunicación, gestión de redes sociales y análisis de datos. Además, he aprendido a trabajar en equipo, a coordinar proyectos y a gestionar crisis de reputación online."
+            },
+            "ep-soluciones": {
+                "title": "Asistente Virtual",
+                "company": "EP Soluciones",
+                "period": "Enero 2007 - Julio 2011",
+                "description": "En mi rol como Asistente Virtual, desarrollé habilidades de organización, gestión del tiempo y atención al detalle. Aprendí a optimizar procesos administrativos, a gestionar la comunicación con clientes y a trabajar de forma autónoma y proactiva. Esta experiencia me ha proporcionado una base sólida para desenvolverme en entornos profesionales."
+            }
+        }
+    },
+    "portfolio": {
+        "title": "Proyectos Destacados",
+        "title2": "Clientes de Confianza",
+        "subtitle": "Todos mis Proyectos",
+        "subtitle2": "Potenciando Negocios con Confianza",
+        "projects": {
+            "codercamp": {
+                "description": "Plataforma educativa enfocada en experiencias de aprendizaje interactivo"
+            },
+            "viajesbsas": {
+                "description": "Sitio web de agencia de viajes con funciones completas de reserva"
+            },
+            "guitarstore": {
+                "description": "Plataforma moderna de comercio electrónico para instrumentos musicales"
+            },
+            "javascript": {
+                "description": "Aplicación web interactiva que muestra las capacidades de JavaScript"
+            },
+            "hbm": {
+                "description": "Sistema de gestión de agencia de modelos con características completas para registro de usuarios, procesamiento de pagos y controles administrativos.",
+                "platforms": [
+                    "Registro y Login de Usuarios",
+                    "Sistema de Carga de Pagos Mensuales",
+                    "Gestión de Pagos Administrativa",
+                    "Recordatorios Automáticos de Pago",
+                    "Recuperación de Contraseña",
+                    "Actualizaciones de Perfil en Tiempo Real",
+                    "Filtrado Administrativo y Vistas Personalizadas",
+                    "Hostinger",
+                    "Vercel"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "title": "¿Interesado en trabajar juntos?",
+        "subtitle": "Contáctame para discutir tus necesidades y explorar las posibilidades.",
+        "form": {
+            "name": "Nombre",
+            "email": "Correo electrónico",
+            "message": "Mensaje",
+            "send": "Enviar mensaje"
+        }
+    },
+    "footer": {
+        "rights": "© 2024. Todos los derechos reservados."
+    }
+}

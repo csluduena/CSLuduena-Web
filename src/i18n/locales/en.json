@@ -1,0 +1,131 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About me / Experience",
+        "portfolio": "Portfolio",
+        "contact": "Contact me",
+        "downloadCV": "Download CV",
+        "language": "Language"
+    },
+    "hero": {
+        "role": "Fullstack Developer",
+        "technologies": "JavaScript | Odoo | Salesforce"
+    },
+    "skills": {
+        "frontend": {
+            "title": "Frontend",
+            "description": "Crafting engaging and functional user interfaces with the latest web technologies. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>HTML</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>CSS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>JavaScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>ReactJS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Bootstrap</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Tailwind</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ReactJS",
+                "Bootstrap",
+                "Tailwind",
+                "Odoo",
+                "Salesforce"
+            ]
+        },
+        "backend": {
+            "title": "Backend",
+            "description": "Building robust and scalable foundation of web applications, ensuring seamless functionality and efficient data management.  <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Node.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>SQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>MongoDB</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Firebase</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Postman</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "technologies": [
+                "Node.js",
+                "SQL",
+                "MongoDB",
+                "Firebase",
+                "Postman",
+                "Odoo",
+                "Salesforce"
+            ]
+        },
+        "adaptable": {
+            "title": "Adaptable & Efficient",
+            "description": "A proactive and resourceful individual who excels in independent environments, consistently delivering high-quality work with a keen eye for detail."
+        },
+        "supportive": {
+            "title": "Supportive & Inclusive",
+            "description": "A friendly and effective collaborator who thrives in any team environment, driving projects forward with seamless communication and a results-oriented approach."
+        },
+        "experience": {
+            "title": "Experience & Responsibility",
+            "description": "Experience, quality, commitment, and responsibility. That's what you'll find in me, in addition to being a friendly person who easily adapts to work environments in a friendly and efficient manner."
+        }
+    },
+    "about": {
+        "intro": "Hi, I am Carlos Sebastian Ludueña",
+        "experience": {
+            "indie": {
+                "title": "Full Stack Developer",
+                "company": "INDIE Argentina",
+                "period": "Jan 2023 - Present",
+                "description": "I currently work as a Full Stack Developer at INDIE Argentina, where I specialize in the development and maintenance of custom websites using Odoo ERP. My role focuses on creating comprehensive solutions that encompass both frontend and backend, implementing complex functionalities, designing attractive interfaces and optimizing performance with the most appropriate technologies. I contribute to the success of web projects that generate a positive impact on clients."
+            },
+            "freelance": {
+                "title": "Web Development",
+                "company": "Freelance",
+                "period": "Dec 2011 - Present",
+                "description": "I continue my work as a freelance web developer, a path I started with pure HTML and CSS and that has led me to master technologies such as React, JavaScript, Node.js and MariaDB. In addition, I have gained experience in testing with Postman, using Firebase and creating responsive designs. I have learned to communicate effectively with clients and offer customized solutions."
+            },
+            "st-computacion": {
+                "title": "Community Manager",
+                "company": "ST Computacion",
+                "period": "Aug 2011 - Dec 2022",
+                "description": "My experience as a Community Manager has given me a deep understanding of the digital ecosystem and online marketing strategies. I have developed communication skills, social media management and data analysis. I have also learned to work in a team, coordinate projects and manage online reputation crises."
+            },
+            "ep-soluciones": {
+                "title": "Virtual Assistant",
+                "company": "EP Soluciones",
+                "period": "Jan 2007 - July 2011",
+                "description": "In my role as a Virtual Assistant, I developed organizational, time management and attention to detail skills. I learned to optimize administrative processes, manage communication with clients and work autonomously and proactively. This experience has provided me with a solid foundation to work in professional environments."
+            }
+        }
+    },
+    "portfolio": {
+        "title": "Featured Projects",
+        "title2": "Trusted Clients",
+        "subtitle": "All my Projects",
+        "subtitle2": "Empowering Businesses with Confidence",
+        "projects": {
+            "codercamp": {
+                "description": "Educational platform project focused on interactive learning experiences"
+            },
+            "viajesbsas": {
+                "description": "Travel agency website with comprehensive booking features"
+            },
+            "guitarstore": {
+                "description": "Modern e-commerce platform for musical instruments"
+            },
+            "javascript": {
+                "description": "Interactive web application showcasing JavaScript capabilities"
+            },
+            "hbm": {
+                "description": "Modeling agency management system with comprehensive features for user registration, payment processing, and administrative controls.",
+                "platforms": [
+                    "User Registration & Login",
+                    "Monthly Payment Upload System",
+                    "Admin Payment Management",
+                    "Automated Payment Reminders",
+                    "Password Recovery",
+                    "Real-Time Profile Updates",
+                    "Admin Filtering & Custom Views",
+                    "Hostinger",
+                    "Vercel"
+                ]
+            }
+        }
+    },
+    "contact": {
+        "title": "Interested in working together?",
+        "subtitle": "Get in touch to discuss your needs and explore the possibilities.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send Message"
+        }
+    },
+    "footer": {
+        "rights": "© 2024. All rights reserved."
+    }
+}

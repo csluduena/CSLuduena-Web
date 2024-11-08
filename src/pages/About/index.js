@@ -1,5 +1,5 @@
 import { t } from '../../i18n/config.js';
-import { createTimeline } from './components/Timeline.js';
+import { createSkills } from './components/Skills.js';
 
 export function renderAbout(container) {
     const main = document.createElement('main');
@@ -33,7 +33,43 @@ export function renderAbout(container) {
     }, 100);
 
     wrapper.appendChild(profileSection);
-    wrapper.appendChild(createTimeline());
+
+    try {
+        const skillsSection = createSkills();
+        wrapper.appendChild(skillsSection);
+    } catch (error) {
+        console.error('Error creating skills section:', error);
+        const errorMessage = document.createElement('div');
+        errorMessage.className = 'text-red-500 text-center mt-4';
+        errorMessage.textContent = 'An error occurred while loading skills. Please try again later.';
+        wrapper.appendChild(errorMessage);
+    }
+
+    // Individual Skills Section
+    const individualSkills = document.createElement('div');
+    individualSkills.className = 'mt-16';
+    const individualItems = t('skills.individual.items', { returnObjects: true });
+    // individualSkills.innerHTML = `
+    //     <h2 class="text-3xl font-bold text-white mb-4">${t('skills.individual.title')}</h2>
+    //     <ul class="list-disc list-inside text-gray-300">
+    //         ${Array.isArray(individualItems) ? individualItems.map(item => `<li>${item}</li>`).join('') : ''}
+    //     </ul>
+    // `;
+
+    // Teamwork Skills Section
+    const teamworkSkills = document.createElement('div');
+    teamworkSkills.className = 'mt-16';
+    const teamworkItems = t('skills.teamwork.items', { returnObjects: true });
+    // teamworkSkills.innerHTML = `
+    //     <h2 class="text-3xl font-bold text-white mb-4">${t('skills.teamwork.title')}</h2>
+    //     <ul class="list-disc list-inside text-gray-300">
+    //         ${Array.isArray(teamworkItems) ? teamworkItems.map(item => `<li>${item}</li>`).join('') : ''}
+    //     </ul>
+    // `;
+
+    wrapper.appendChild(individualSkills);
+    wrapper.appendChild(teamworkSkills);
+    
     main.appendChild(wrapper);
     container.appendChild(main);
 }

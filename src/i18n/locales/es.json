@@ -1,7 +1,8 @@
 {
     "nav": {
         "home": "Inicio",
-        "about": "Sobre mí / Experiencia",
+        "experience": "Experiencia",
+        "about": "Sobre mí",
         "portfolio": "Portafolio",
         "contact": "Contáctame",
         "downloadCV": "Descargar CV",
@@ -50,6 +51,14 @@
         "experience": {
             "title": "Experiencia y Responsabilidad",
             "description": "Experiencia, calidad, compromiso y responsabilidad. Eso es lo que encontrarás en mí, además de ser una persona amigable que se adapta fácilmente a los entornos de trabajo de manera cordial y eficiente."
+        },
+        "individual": {
+            "title": "Habilidades Individuales",
+            "items": "<ul class='list-disc list-inside text-gray-300 space-y-2'><li>Soy una persona proactiva y responsable, con gran capacidad de aprendizaje y adaptación.</li><li>Me apasiona la tecnología y disfruto resolver problemas de manera creativa.</li><li>Soy organizado y metódico en mi trabajo, y siempre busco la excelencia en cada proyecto.</li><li>Me gusta estar al día con las últimas tendencias en desarrollo web.</li><li>Tengo facilidad para trabajar de forma independiente y cumplir con los plazos.</li></ul>"
+        },
+        "teamwork": {
+            "title": "Habilidades para el Trabajo en Equipo",
+            "items": "<ul class='list-disc list-inside text-gray-300 space-y-2'><li>Soy un excelente comunicador y me encanta colaborar con otros para alcanzar objetivos comunes.</li><li>Disfruto trabajar en equipo y aprender de las experiencias de los demás. Soy flexible y me adapto con facilidad a distintos roles y entornos de trabajo.</li><li>Me gusta compartir mis conocimientos y ayudar a otros a crecer.</li><li>Creo en la importancia de un buen ambiente laboral y en la comunicación abierta.</li></ul>"
         }
     },
     "about": {

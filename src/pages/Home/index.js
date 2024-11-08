@@ -1,14 +1,14 @@
 import { t } from '../../i18n/config.js';
 import { createHero } from './components/Hero.js';
-import { createSkills } from './components/Skills.js';
 
 export function renderHome(container) {
     const main = document.createElement('main');
-    main.className = 'pt-16';
+    main.className = 'flex flex-col min-h-screen';
     
-    main.appendChild(createHero());
-    main.appendChild(createSkills());
+    const hero = createHero();
+    hero.className = 'flex-grow flex items-center justify-center';
+    
+    main.appendChild(hero);
     
     container.appendChild(main);
 }
-

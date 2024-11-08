@@ -1,7 +1,8 @@
 {
     "nav": {
         "home": "Home",
-        "about": "About me / Experience",
+        "experience": "Experience",
+        "about": "About me",
         "portfolio": "Portfolio",
         "contact": "Contact me",
         "downloadCV": "Download CV",
@@ -50,6 +51,14 @@
         "experience": {
             "title": "Experience & Responsibility",
             "description": "Experience, quality, commitment, and responsibility. That's what you'll find in me, in addition to being a friendly person who easily adapts to work environments in a friendly and efficient manner."
+        },
+        "individual": {
+            "title": "Individual Skills",
+            "items": "<ul class='list-disc list-inside text-gray-300 space-y-2'><li>I'm a proactive and responsible person with a great capacity for learning and adaptation.</li><li>I'm passionate about technology and I enjoy solving problems creatively.</li><li>I'm organized and methodical in my work, and I always strive for excellence in every project.</li><li>I like to stay up-to-date on the latest trends in web development.</li><li>I have an ease for working independently and meeting deadlines.</li></ul>"
+        },
+        "teamwork": {
+            "title": "Teamwork Skills",
+            "items": "<ul class='list-disc list-inside text-gray-300 space-y-2'><li>I'm an excellent communicator and I love collaborating with others to achieve common goals.</li><li>I enjoy working in a team and learning from the experiences of others. I'm flexible and I adapt easily to different roles and work environments.</li><li>I like to share my knowledge and help others grow.</li><li>I believe in the importance of a good work environment and open communication.</li></ul>"
         }
     },
     "about": {

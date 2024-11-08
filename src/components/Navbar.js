@@ -15,6 +15,7 @@ export function setupNavbar() {
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
                             <a href="/" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.home')}</a>
+                            <a href="/experience" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.experience')}</a>
                             <a href="/about" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.about')}</a>
                             <a href="/portfolio" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.portfolio')}</a>
                             <a href="/contact" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.contact')}</a>
@@ -37,6 +38,7 @@ export function setupNavbar() {
             <div id="mobileMenu" class="hidden md:hidden bg-dark-300">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.home')}</a>
+                    <a href="/experience" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.experience')}</a>
                     <a href="/about" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.about')}</a>
                     <a href="/portfolio" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.portfolio')}</a>
                     <a href="/contact" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.contact')}</a>

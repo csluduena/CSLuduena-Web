@@ -2,11 +2,11 @@ import { t } from '../../../i18n/config.js';
 
 export function createContactForm() {
     const form = document.createElement('form');
-    form.className = 'relative bg-dark-300 rounded-lg p-8 shadow-lg max-w-lg mx-auto opacity-0 transform translate-y-4';
+    form.className = 'relative bg-dark-300 rounded-lg p-6 shadow-lg max-w-lg mx-auto opacity-0 transform translate-y-4'; // Reduced padding
 
     form.innerHTML = `
-        <div class="mb-6">
-            <label for="name" class="block text-gray-300 text-sm font-medium mb-2">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-300 text-sm font-medium mb-1">
                 ${t('contact.form.name')}
             </label>
             <input
@@ -18,8 +18,8 @@ export function createContactForm() {
             />
         </div>
 
-        <div class="mb-6">
-            <label for="email" class="block text-gray-300 text-sm font-medium mb-2">
+        <div class="mb-4">
+            <label for="email" class="block text-gray-300 text-sm font-medium mb-1">
                 ${t('contact.form.email')}
             </label>
             <input
@@ -31,15 +31,15 @@ export function createContactForm() {
             />
         </div>
 
-        <div class="mb-6">
-            <label for="message" class="block text-gray-300 text-sm font-medium mb-2">
+        <div class="mb-4">
+            <label for="message" class="block text-gray-300 text-sm font-medium mb-1">
                 ${t('contact.form.message')}
             </label>
             <textarea
                 id="message"
                 name="message"
                 required
-                rows="4"
+                rows="3"
                 class="w-full bg-dark-400 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-primary-500"
             ></textarea>
         </div>

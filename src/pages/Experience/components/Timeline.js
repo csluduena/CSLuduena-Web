@@ -50,12 +50,20 @@ export function createTimeline() {
 
 function createTimelineItem(experience, index) {
     const item = document.createElement('div');
-    item.className = `relative flex items-center mb-12 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`;
+    
+    // Detectar si el ancho de pantalla es menor a 699px
+    const isSmallScreen = window.innerWidth < 699;
+
+    // Cambiar las clases y estilo según el tamaño de la pantalla
+    item.className = isSmallScreen
+        ? 'relative flex flex-col items-center mb-12'
+        : `relative flex items-center mb-12 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`;
+    
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
 
     item.innerHTML = `
-        <div class="w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}">
+        <div class="${isSmallScreen ? 'w-full text-center' : 'w-5/12'} ${!isSmallScreen && index % 2 === 0 ? 'text-right pr-8' : ''} ${!isSmallScreen && index % 2 !== 0 ? 'text-left pl-8' : ''}">
             <div class="bg-dark-300 p-6 rounded-lg shadow-lg">
                 <span class="text-primary-400 font-semibold">
                     ${experience.date}
@@ -71,7 +79,7 @@ function createTimelineItem(experience, index) {
                 </p>
             </div>
         </div>
-        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary-500"></div>
+        <div class="absolute ${isSmallScreen ? 'top-0 left-1/2 transform -translate-x-1/2' : 'left-1/2 transform -translate-x-1/2'} w-4 h-4 rounded-full bg-primary-500"></div>
     `;
 
     // Animation using Intersection Observer

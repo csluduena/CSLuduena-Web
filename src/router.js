@@ -13,16 +13,12 @@ const routes = {
 };
 
 export function initRouter() {
-    function handleRoute() {
-        const path = window.location.pathname;
+    function handleRoute(path = window.location.pathname) {
         const renderer = routes[path] || routes['/'];
         const mainContent = document.getElementById('main-content');
         
-        // Clear previous content
         if (mainContent) {
             mainContent.innerHTML = '';
-            
-            // Render new content
             try {
                 renderer(mainContent);
             } catch (error) {
@@ -30,7 +26,7 @@ export function initRouter() {
             }
         }
 
-        // Update active nav link - Fix for active state
+        // Update active nav link
         document.querySelectorAll('[data-link]').forEach(link => {
             const href = link.getAttribute('href');
             if (href === path) {
@@ -44,14 +40,21 @@ export function initRouter() {
     }
 
     // Handle navigation
-    window.addEventListener('popstate', handleRoute);
+    window.addEventListener('popstate', () => handleRoute());
     document.addEventListener('click', (e) => {
         const link = e.target.closest('[data-link]');
         if (link) {
             e.preventDefault();
             const href = link.getAttribute('href');
             window.history.pushState({}, '', href);
-            handleRoute();
+            handleRoute(href);
+        }
+    });
+
+    // Handle language changes
+    document.addEventListener('languageChanged', (event) => {
+        if (event.detail && event.detail.currentPath) {
+            handleRoute(event.detail.currentPath);
         }
     });
 

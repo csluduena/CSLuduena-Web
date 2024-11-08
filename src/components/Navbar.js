@@ -61,10 +61,18 @@ export function setupNavbar() {
 
         const handleLanguageChange = () => {
             const newLang = i18next.language === 'en' ? 'es' : 'en';
+            const currentPath = window.location.pathname;
+            
             changeLanguage(newLang).then(() => {
                 renderNavbar();
-                // Re-render the current page
-                const event = new CustomEvent('languageChanged', { detail: { language: newLang } });
+                // Mantener la ruta actual después del cambio de idioma
+                window.history.pushState({}, '', currentPath);
+                const event = new CustomEvent('languageChanged', { 
+                    detail: { 
+                        language: newLang,
+                        currentPath: currentPath 
+                    }
+                });
                 document.dispatchEvent(event);
             });
         };

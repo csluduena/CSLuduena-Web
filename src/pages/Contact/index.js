@@ -3,15 +3,15 @@ import { createContactForm } from './components/ContactForm.js';
 
 export function renderContact(container) {
     const main = document.createElement('main');
-    main.className = 'pt-24 pb-16';
+    main.className = 'h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4'; // Subtract navbar height
 
     const wrapper = document.createElement('div');
-    wrapper.className = 'max-w-3xl mx-auto px-4 sm:px-6 lg:px-8';
+    wrapper.className = 'max-w-3xl w-full';
 
     const header = document.createElement('div');
-    header.className = 'text-center mb-12 opacity-0 transform translate-y-4';
+    header.className = 'text-center mb-8 opacity-0 transform translate-y-4'; // Reduced margin bottom
     header.innerHTML = `
-        <h1 class="text-4xl font-bold text-white mb-4">
+        <h1 class="text-4xl font-bold text-white mb-2">
             ${t('contact.title')}
         </h1>
         <p class="text-xl text-gray-300">

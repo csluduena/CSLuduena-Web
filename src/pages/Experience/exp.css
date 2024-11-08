@@ -1,0 +1,38 @@
+/* Diseño para pantallas pequeñas */
+@media (max-width: 699px) {
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-item {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .timeline-item-content {
+        padding: 4px;
+    }
+
+    .timeline-item-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-item-content p {
+        font-size: 0.875rem;
+    }
+
+    .timeline-dot {
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Mejorar el diseño de los botones en pantallas pequeñas */
+    .timeline-item .btn {
+        font-size: 0.875rem;
+        padding: 8px 12px;
+    }
+}

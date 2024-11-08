@@ -7,7 +7,7 @@ export function createHero() {
     section.innerHTML = `
         <div class="absolute inset-0 overflow-hidden">
             <video autoplay loop muted playsinline class="absolute right-0 top-0 w-full h-full object-cover" style="opacity:0.13">
-                <source src="/src/assets/coding.mp4" type="video/mp4">
+                <source src="assets/coding.mp4" type="video/mp4">
             </video>
         <div class="absolute inset-0 bg-gradient-to-b "></div>
         </div>

@@ -75,7 +75,7 @@ export function renderPortfolio(container) {
     videoBackground.className = 'absolute inset-0 overflow-hidden';
     videoBackground.innerHTML = `
         <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-5">
-            <source src="/src/assets/coding.mp4" type="video/mp4">
+            <source src="/assets/coding.mp4" type="video/mp4">
         </video>
     `;
     main.appendChild(videoBackground);

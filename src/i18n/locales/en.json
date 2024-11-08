@@ -1,4 +1,8 @@
 {
+    "experience": {
+        "title": "My Work Experience",
+        "subtitle": "The path to my future."
+    },
     "nav": {
         "home": "Home",
         "experience": "Experience",
@@ -9,7 +13,7 @@
         "language": "Language"
     },
     "hero": {
-        "role": "Fullstack Developer",
+        "role": "Full Stack Developer",
         "technologies": "JavaScript | Odoo | Salesforce"
     },
     "skills": {

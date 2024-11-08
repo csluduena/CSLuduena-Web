@@ -16,7 +16,7 @@ export function initRouter() {
     function handleRoute(path = window.location.pathname) {
         const renderer = routes[path] || routes['/'];
         const mainContent = document.getElementById('main-content');
-        
+    
         if (mainContent) {
             mainContent.innerHTML = '';
             try {
@@ -52,10 +52,9 @@ export function initRouter() {
     });
 
     // Handle language changes
-    document.addEventListener('languageChanged', (event) => {
-        if (event.detail && event.detail.currentPath) {
-            handleRoute(event.detail.currentPath);
-        }
+    document.addEventListener('languageChanged', () => {
+        const currentPath = window.location.pathname;
+        handleRoute(currentPath);
     });
 
     // Initial route

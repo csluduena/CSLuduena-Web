@@ -8,6 +8,10 @@
         "downloadCV": "Descargar CV",
         "language": "Idioma"
     },
+    "experience":{
+        "title": "Mi experiencia Laboral",
+        "subtitle": "El camino hacia mi futuro."
+    },
     "hero": {
         "role": "Desarrollador Full Stack",
         "technologies": "JavaScript | Odoo | Salesforce"

@@ -1,9 +1,9 @@
 export function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = 'bg-dark-300 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 opacity-0 transform translate-y-4';
-    
+
     const defaultImage = './projects/javascript.png';
-    
+
     card.innerHTML = `
         <div class="relative aspect-video group">
             <img
@@ -31,7 +31,7 @@ export function createProjectCard(project) {
                 `).join('')}
             </div>
 
-            ${project.platforms ? `
+            ${Array.isArray(project.platforms) && project.platforms.length ? `
                 <div class="flex flex-wrap gap-2 mb-4">
                     ${project.platforms.map(platform => `
                         <span class="text-sm text-gray-300 bg-dark-400 px-2 py-1 rounded">

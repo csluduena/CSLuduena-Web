@@ -12,13 +12,15 @@ export function createHero() {
         <div class="absolute inset-0 bg-gradient-to-b "></div>
         </div>
         <div class="text-center opacity-0 transform translate-y-4 relative z-10" data-animate>
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-primary-600 text-transparent bg-clip-text">
+            <span class="underline-dynamic top-line" style="margin-top:-4rem; opacity:0"><span class="underline-dynamic top-line" style="margin-top:12px; opacity:0.44;"></span></span>
+            <h1 class="font-bold mb-5 bg-gradient-to-r from-primary-400 to-primary-600 text-transparent bg-clip-text hero-title" style="font-size: 7rem;">
                 CSLuduena
             </h1>
-            <h2 class="text-2xl md:text-3xl text-gray-300 mb-4">
+            <span class="underline-dynamic bottom-line" style="margin-bottom:-4rem; opacity:0"><span class="underline-dynamic bottom-line" style="margin-bottom:12px; opacity:0.44"></span></span>
+            <h2 class="text-2xl md:text-4xl text-gray-400 mb-12">
                 ${t('hero.role')}
             </h2>
-            <p class="text-lg md:text-xl text-gray-400">
+            <p class="text-xs md:text-lg text-gray-500">
                 ${t('hero.technologies')}
             </p>
         </div>

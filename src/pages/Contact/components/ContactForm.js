@@ -2,7 +2,7 @@ import { t } from '../../../i18n/config.js';
 
 export function createContactForm() {
     const form = document.createElement('form');
-    form.className = 'relative bg-dark-300 rounded-lg p-6 shadow-lg max-w-lg mx-auto opacity-0 transform translate-y-4'; // Reduced padding
+    form.className = 'relative bg-dark-300 rounded-lg p-6 shadow-lg max-w-lg mx-auto opacity-0 transform translate-y-4';
 
     form.innerHTML = `
         <div class="mb-4">
@@ -50,6 +50,11 @@ export function createContactForm() {
         >
             ${t('contact.form.send')}
         </button>
+
+        <div id="formStatus" class="mt-4 text-center hidden">
+            <p class="text-green-500 success hidden">Message sent successfully!</p>
+            <p class="text-red-500 error hidden">Error sending message. Please try again.</p>
+        </div>
     `;
 
     // Form submission handler
@@ -57,8 +62,34 @@ export function createContactForm() {
         e.preventDefault();
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
-        console.log('Form submitted:', data);
-        // Here you would typically send the data to your backend
+        
+        const statusDiv = form.querySelector('#formStatus');
+        const successMsg = statusDiv.querySelector('.success');
+        const errorMsg = statusDiv.querySelector('.error');
+        
+        try {
+            const response = await fetch('https://formspree.io/f/myzypgzy', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                statusDiv.classList.remove('hidden');
+                successMsg.classList.remove('hidden');
+                errorMsg.classList.add('hidden');
+                form.reset();
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            statusDiv.classList.remove('hidden');
+            errorMsg.classList.remove('hidden');
+            successMsg.classList.add('hidden');
+            console.error('Error sending message:', error);
+        }
     });
 
     // Animation

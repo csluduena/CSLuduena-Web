@@ -2,14 +2,13 @@ import { t } from '../../../i18n/config.js';
 import { createSkillCard } from '../../Home/components/SkillCard.js';
 import { createTechBadge } from '../../Home/components/TechBadge.js';
 
-// Función para crear las tarjetas con el mismo hover y animación
 function createSkillCardWithHover(title, description, children = []) {
     const card = document.createElement('div');
     card.className = 'bg-dark-300/80 backdrop-blur-sm rounded-lg p-6 shadow-lg opacity-0 transform translate-y-4 hover:shadow-primary-500/20 transition-all duration-300';
     
     card.innerHTML = `
         <h3 class="text-2xl font-bold text-primary-400 mb-4">${title}</h3>
-        ${description ? `<p class="text-gray-300 mb-6">${description}</p>` : ''}
+        ${description ? `<div class="text-gray-300 mb-6">${description}</div>` : ''}
         <div class="flex flex-wrap gap-2"></div>
     `;
 
@@ -18,7 +17,6 @@ function createSkillCardWithHover(title, description, children = []) {
         children.forEach(child => container.appendChild(child));
     }
 
-    // Animación con IntersectionObserver
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -80,16 +78,14 @@ export function createSkills() {
     const skillsSections = document.createElement('div');
     skillsSections.className = 'grid grid-cols-1 md:grid-cols-2 gap-8 mt-8';
 
-    // Usando la función createSkillCardWithHover para individualSkills y teamworkSkills
     const individualSkills = createSkillCardWithHover(
-        t('skills.individual.title'), t('skills.individual.items'),
-        '',
-        [] // Se puede agregar contenido adicional si es necesario
+        t('skills.individual.title'),
+        t('skills.individual.items')
     );
 
     const teamworkSkills = createSkillCardWithHover(
-        t('skills.teamwork.title'),t('skills.individual.items'),
-        [] // Se puede agregar contenido adicional si es necesario
+        t('skills.teamwork.title'),
+        t('skills.teamwork.items')
     );
 
     skillsSections.appendChild(individualSkills);

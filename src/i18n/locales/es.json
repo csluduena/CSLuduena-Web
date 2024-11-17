@@ -14,33 +14,38 @@
     },
     "hero": {
         "role": "Desarrollador Full Stack",
-        "technologies": "JavaScript | Odoo | Salesforce"
+        "technologies": "JavaScript | Odoo ERP"
     },
     "skills": {
         "frontend": {
             "title": "Frontend",
-            "description": "Creación de interfaces de usuario atractivas y funcionales con las últimas tecnologías web. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>HTML</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>CSS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>JavaScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>ReactJS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Bootstrap</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Tailwind</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "description": "Creación de interfaces de usuario atractivas y funcionales con las últimas tecnologías web. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>HTML</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>CSS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>JavaScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>ReactJS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Vue.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Bootstrap</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Tailwind</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Microfrontend</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo ERP</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
             "technologies": [
                 "HTML",
                 "CSS",
                 "JavaScript",
                 "ReactJS",
+                "Vue.js",
                 "Bootstrap",
                 "Tailwind",
-                "Odoo",
+                "Microfrontend",
+                "Odoo ERP",
                 "Salesforce"
             ]
         },
         "backend": {
             "title": "Backend",
-            "description": "Construcción de bases sólidas y escalables para aplicaciones web, asegurando una funcionalidad perfecta y una gestión eficiente de datos. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Node.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>SQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>MongoDB</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Firebase</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Postman</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "description": "Construcción de bases sólidas y escalables para aplicaciones web, asegurando una funcionalidad perfecta y una gestión eficiente de datos. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Node.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>SQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>MongoDB</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Mongoose</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Firebase</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Postman</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Swagger</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Git</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo ERP</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
             "technologies": [
                 "Node.js",
                 "SQL",
                 "MongoDB",
+                "Mongoose",
                 "Firebase",
                 "Postman",
-                "Odoo",
+                "Swagger",
+                "Git",
+                "Odoo ERP",
                 "Salesforce"
             ]
         },

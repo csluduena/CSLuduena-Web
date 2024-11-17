@@ -6,6 +6,24 @@
     color-scheme: dark;
 }
 
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.13;
+}
+
 /* Circuit Animation */
 .circuit-container {
     position: fixed;
@@ -53,30 +71,11 @@ body {
     position: relative;
 }
 
-/* Contenedor principal ajustado */
 #main-content {
     position: relative;
     z-index: 1;
     min-height: calc(100vh - 4rem);
-    margin-top: 0%; /* Altura del navbar */
-}
-
-/* Video background container */
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.13;
+    margin-top: 0%;
 }
 
 #main-content::before {
@@ -130,7 +129,6 @@ body {
     left: 100%;
 }
 
-/* Glowing cursor trail */
 .cursor-glow {
     width: 50px;
     height: 50px;
@@ -142,10 +140,91 @@ body {
     backdrop-filter: blur(2px);
 }
 
-/* Asegura que el body y html tengan altura completa */
 html, body {
     min-height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+.underline-dynamic {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Color inicial */
+    transform: scaleX(0);
+    transform-origin: center center;
+    animation: underline-swipe 5s ease-in-out infinite;
+}
+
+.top-line {
+    top: -15px; /* Ajusta la distancia para que esté por encima de "CSLuduena" */
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    animation: underline-swipe 5s ease-in-out infinite;
+}
+
+.bottom-line {
+    bottom: -15px; /* Ajusta la distancia para que esté por debajo del texto */
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    animation: underline-swipe-reverse 5s ease-in-out infinite;
+}
+
+@keyframes underline-swipe {
+    0% {
+        transform: translateX(-50%) scaleX(0); /* Comienza desde el centro con 0% */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Color inicial */
+    }
+    25% {
+        transform: translateX(-50%) scaleX(1); /* Expande completamente */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Mantiene el color inicial */
+    }
+    50% {
+        transform: translateX(-50%) scaleX(1); /* Mantiene expandido */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Mantiene el color inicial */
+    }
+    75% {
+        transform: translateX(-50%) scaleX(0); /* Contrae de nuevo */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Mantiene el color inicial */
+    }
+    100% {
+        transform: translateX(-50%) scaleX(0); /* Vuelve al centro */
+        background: linear-gradient(to right, #12de0f27, #25a9e6e6, #12de0f27); /* Termina con el nuevo color de centro */
+    }
+}
+
+@keyframes underline-swipe-reverse {
+    0% {
+        transform: translateX(-50%) scaleX(0); /* Comienza desde el centro con 0% */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Color inicial */
+    }
+    25% {
+        transform: translateX(-50%) scaleX(1); /* Expande completamente */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Mantiene el color inicial */
+    }
+    50% {
+        transform: translateX(-50%) scaleX(1); /* Mantiene expandido */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Mantiene el color inicial */
+    }
+    75% {
+        transform: translateX(-50%) scaleX(0); /* Contrae de nuevo */
+        background: linear-gradient(to right, #12de0f27, #25a9e67c, #12de0f27); /* Mantiene el color inicial */
+    }
+    100% {
+        transform: translateX(-50%) scaleX(0); /* Vuelve al centro */
+        background: linear-gradient(to right, #12de0f27, #25a9e6e6, #12de0f27); /* Termina con el nuevo color de centro */
+    }
+}
+
+/* Establece el tamaño de la fuente por defecto en 7rem para el h1 con la clase .hero-title */
+.hero-title {
+    font-size: 7rem;
+}
+
+/* Para resoluciones móviles (hasta 768px de ancho), cambia el tamaño de la fuente a 3rem solo para este h1 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem !important;
+    }
 }

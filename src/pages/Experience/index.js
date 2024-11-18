@@ -1,5 +1,6 @@
 import { t } from '../../i18n/config.js';
 import { createTimeline } from './components/Timeline.js';
+import { createScrollToTop } from '../../components/ScrollToTop.js';
 
 export function renderExperience(container) {
     const main = document.createElement('main');
@@ -29,5 +30,9 @@ export function renderExperience(container) {
     wrapper.appendChild(header);
     wrapper.appendChild(createTimeline());
     main.appendChild(wrapper);
+    
+    // Add scroll to top button
+    main.appendChild(createScrollToTop());
+    
     container.appendChild(main);
 }

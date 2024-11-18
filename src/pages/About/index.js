@@ -1,5 +1,6 @@
 import { t } from '../../i18n/config.js';
 import { createSkills } from './components/Skills.js';
+import { createScrollToTop } from '../../components/ScrollToTop.js';
 
 export function renderAbout(container) {
     const main = document.createElement('main');
@@ -8,7 +9,6 @@ export function renderAbout(container) {
     const wrapper = document.createElement('div');
     wrapper.className = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8';
 
-    // Profile Section
     const profileSection = document.createElement('div');
     profileSection.className = 'text-center mb-16 opacity-0 transform translate-y-4';
     profileSection.innerHTML = `
@@ -18,6 +18,7 @@ export function renderAbout(container) {
                 alt="Carlos Sebastian Ludueña"
                 class="rounded-full mx-auto object-cover border-4 border-primary-500"
                 style="width: 19rem; height: 19rem"
+                loading="lazy"  <!-- Lazy load para la imagen -->
             />
         </div>
         <h1 class="text-4xl font-bold text-white mb-4">
@@ -25,7 +26,6 @@ export function renderAbout(container) {
         </h1>
     `;
 
-    // Animate profile section
     setTimeout(() => {
         profileSection.style.transition = 'all 0.8s ease-out';
         profileSection.style.opacity = '1';
@@ -45,31 +45,10 @@ export function renderAbout(container) {
         wrapper.appendChild(errorMessage);
     }
 
-    // Individual Skills Section
-    const individualSkills = document.createElement('div');
-    individualSkills.className = 'mt-16';
-    const individualItems = t('skills.individual.items', { returnObjects: true });
-    // individualSkills.innerHTML = `
-    //     <h2 class="text-3xl font-bold text-white mb-4">${t('skills.individual.title')}</h2>
-    //     <ul class="list-disc list-inside text-gray-300">
-    //         ${Array.isArray(individualItems) ? individualItems.map(item => `<li>${item}</li>`).join('') : ''}
-    //     </ul>
-    // `;
-
-    // Teamwork Skills Section
-    const teamworkSkills = document.createElement('div');
-    teamworkSkills.className = 'mt-16';
-    const teamworkItems = t('skills.teamwork.items', { returnObjects: true });
-    // teamworkSkills.innerHTML = `
-    //     <h2 class="text-3xl font-bold text-white mb-4">${t('skills.teamwork.title')}</h2>
-    //     <ul class="list-disc list-inside text-gray-300">
-    //         ${Array.isArray(teamworkItems) ? teamworkItems.map(item => `<li>${item}</li>`).join('') : ''}
-    //     </ul>
-    // `;
-
-    wrapper.appendChild(individualSkills);
-    wrapper.appendChild(teamworkSkills);
-    
     main.appendChild(wrapper);
+    
+    // Add scroll to top button
+    main.appendChild(createScrollToTop());
+    
     container.appendChild(main);
 }

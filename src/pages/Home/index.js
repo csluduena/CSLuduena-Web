@@ -3,7 +3,7 @@ import { createHero } from './components/Hero.js';
 
 export function renderHome(container) {
     const main = document.createElement('main');
-    main.className = 'h-[calc(100vh-4rem)] flex flex-col'; // Subtract navbar height
+    main.className = 'h-screen flex flex-col md:overflow-hidden'; // Prevent vertical scroll on desktop
     
     const hero = createHero();
     hero.className = 'flex-grow flex items-center justify-center';

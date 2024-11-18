@@ -3,7 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSLuduena</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Carlos Sebastian Ludueña | Full Stack Developer</title>
+    <meta name="title" content="Carlos Sebastian Ludueña | Full Stack Developer">
+    <meta name="description" content="Full Stack Developer specializing in JavaScript, React, Node.js, and Odoo ERP. Building scalable web solutions with modern technologies.">
+    <meta name="keywords" content="Full Stack Developer, JavaScript Developer, React Developer, Node.js, Odoo ERP, Web Development, Frontend Developer, Backend Developer, Software Engineer">
+    <meta name="author" content="Carlos Sebastian Ludueña">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">z
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://csluduena.com/">
+    <meta property="og:title" content="Carlos Sebastian Ludueña | Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer specializing in JavaScript, React, Node.js, and Odoo ERP. Building scalable web solutions with modern technologies.">
+    <meta property="og:image" content="https://csluduena.com/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://csluduena.com/">
+    <meta property="twitter:title" content="Carlos Sebastian Ludueña | Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer specializing in JavaScript, React, Node.js, and Odoo ERP. Building scalable web solutions with modern technologies.">
+    <meta property="twitter:image" content="https://csluduena.com/og-image.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Carlos Sebastian Ludueña",
+      "jobTitle": "Full Stack Developer",
+      "url": "https://csluduena.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/csluduena",
+        "https://github.com/csluduena"
+      ],
+      "knowsAbout": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Odoo ERP",
+        "Full Stack Development",
+        "Web Development"
+      ],
+      "workExample": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "HB Models",
+          "applicationCategory": "Web Application",
+          "operatingSystem": "Web Browser"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://csluduena.com">
+    
+    <!-- Preload critical assets for video -->
+    <link rel="preload" href="/src/assets/coding.mp4" as="video" type="video/mp4">
+
     <link rel="stylesheet" href="/src/index.css">
 </head>
 <body class="bg-dark-100 text-white">
@@ -12,6 +78,17 @@
     <main id="main-content"></main>
     
     <footer id="footer" class="bg-dark-200 py-6"></footer>
+
+    <!-- Add script to load the image only when on about section -->
+    <script>
+        if (window.location.hash === '#about') {
+            const preloadLink = document.createElement('link');
+            preloadLink.rel = 'preload';
+            preloadLink.href = '/src/assets/profile.jpg';
+            preloadLink.as = 'image';
+            document.head.appendChild(preloadLink);
+        }
+    </script>
 
     <script type="module" src="/src/main.js"></script>
 </body>

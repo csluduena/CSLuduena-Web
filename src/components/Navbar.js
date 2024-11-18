@@ -19,6 +19,21 @@ export function setupNavbar() {
                             <a href="/about" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.about')}</a>
                             <a href="/portfolio" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.portfolio')}</a>
                             <a href="/contact" data-link class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">${t('nav.contact')}</a>
+                            
+                            <div class="relative inline-block text-left" id="cvDropdown">
+                                <button class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors" id="cvButton">
+                                    ${t('nav.downloadCV')}
+                                </button>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 mt-1 w-32 bg-dark-300 rounded-md shadow-lg py-1 opacity-0 invisible transition-all duration-200" id="cvMenu">
+                                    <a href="https://drive.google.com/file/d/1_wT8ROJ6Uam5XVejZwruAIIlMqPUCMTG/view" target="_blank" class="block px-2 py-1 text-sm text-center text-gray-300 hover:text-primary-400 hover:bg-dark-400">
+                                        CV Español
+                                    </a>
+                                    <a href="https://drive.google.com/file/d/1MXc0kBYjtLNGRbpbu931gqWyFzmq0Fzl/view" target="_blank" class="block px-2 py-1 text-sm text-center text-gray-300 hover:text-primary-400 hover:bg-dark-400">
+                                        CV English
+                                    </a>
+                                </div>
+                            </div>
+
                             <button id="langToggle" class="text-gray-300 hover:text-primary-400 px-3 py-2 transition-colors">
                                 ${i18next.language === 'en' ? 'ES' : 'EN'}
                             </button>
@@ -42,6 +57,14 @@ export function setupNavbar() {
                     <a href="/about" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.about')}</a>
                     <a href="/portfolio" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.portfolio')}</a>
                     <a href="/contact" data-link class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">${t('nav.contact')}</a>
+                    
+                    <div class="border-t border-gray-700 my-2"></div>
+                    
+                    <a href="https://drive.google.com/file/d/1_wT8ROJ6Uam5XVejZwruAIIlMqPUCMTG/view" target="_blank" class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">CV Español</a>
+                    <a href="https://drive.google.com/file/d/1MXc0kBYjtLNGRbpbu931gqWyFzmq0Fzl/view" target="_blank" class="text-gray-300 hover:text-primary-400 block px-3 py-2 transition-colors">CV English</a>
+                    
+                    <div class="border-t border-gray-700 my-2"></div>
+                    
                     <button id="mobileLangToggle" class="text-gray-300 hover:text-primary-400 block px-3 py-2 w-full text-left transition-colors">
                         ${i18next.language === 'en' ? 'ES' : 'EN'}
                     </button>
@@ -49,11 +72,76 @@ export function setupNavbar() {
             </div>
         `;
 
-        // Event Listeners
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const langToggle = document.getElementById('langToggle');
         const mobileLangToggle = document.getElementById('mobileLangToggle');
+        const cvDropdown = document.getElementById('cvDropdown');
+        const cvButton = document.getElementById('cvButton');
+        const cvMenu = document.getElementById('cvMenu');
+
+        let isClickOpen = false;
+        let closeTimeout;
+
+        const showMenu = () => {
+            cvMenu.classList.remove('invisible', 'opacity-0');
+            cvMenu.classList.add('opacity-100');
+        };
+
+        const hideMenu = () => {
+            cvMenu.classList.remove('opacity-100');
+            cvMenu.classList.add('invisible', 'opacity-0');
+        };
+
+        const handleMouseEnter = () => {
+            if (!isClickOpen) {
+                clearTimeout(closeTimeout);
+                showMenu();
+            }
+        };
+
+        const handleMouseLeave = () => {
+            if (!isClickOpen) {
+                clearTimeout(closeTimeout);
+                closeTimeout = setTimeout(() => {
+                    if (!cvMenu.matches(':hover')) {
+                        hideMenu();
+                    }
+                }, 1000);
+            }
+        };
+
+        cvButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            isClickOpen = !isClickOpen;
+            if (isClickOpen) {
+                showMenu();
+            } else {
+                hideMenu();
+            }
+        });
+
+        cvDropdown.addEventListener('mouseenter', handleMouseEnter);
+        cvDropdown.addEventListener('mouseleave', handleMouseLeave);
+
+        cvMenu.addEventListener('mouseenter', () => {
+            if (!isClickOpen) {
+                clearTimeout(closeTimeout);
+            }
+        });
+
+        cvMenu.addEventListener('mouseleave', () => {
+            if (!isClickOpen) {
+                closeTimeout = setTimeout(hideMenu, 1000);
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!cvDropdown.contains(e.target) && isClickOpen) {
+                isClickOpen = false;
+                hideMenu();
+            }
+        });
 
         mobileMenuBtn?.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
@@ -65,7 +153,6 @@ export function setupNavbar() {
             
             changeLanguage(newLang).then(() => {
                 renderNavbar();
-                // Mantener la ruta actual después del cambio de idioma
                 window.history.pushState({}, '', currentPath);
                 const event = new CustomEvent('languageChanged', { 
                     detail: { 
@@ -83,7 +170,6 @@ export function setupNavbar() {
 
     renderNavbar();
 
-    // Listen for language changes
     document.addEventListener('languageChanged', () => {
         renderNavbar();
     });

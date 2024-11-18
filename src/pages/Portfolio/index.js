@@ -1,5 +1,6 @@
 import { t } from '../../i18n/config.js';
 import { createProjectCard } from './components/ProjectCard.js';
+import { createScrollToTop } from '../../components/ScrollToTop.js';
 
 function getProjects() {
     return [
@@ -49,20 +50,10 @@ function getHbmProject() {
         description: t('portfolio.projects.hbm.description'),
         image: '/projects/hbmodels.png',
         technologies: ['JavaScript', 'PHP', 'MariaDB', 'phpMyAdmin', 'HTML', 'CSS'],
-        platforms: t('portfolio.projects.hbm.platforms', { returnObjects: true }) || [], // Asegurándote que siempre sea un array
+        platforms: t('portfolio.projects.hbm.platforms', { returnObjects: true }) || [],
         liveUrl: 'https://hbmodels.com.ar/'
     };
 }
-
-const hbmProject = {
-    id: 'hbm',
-    title: 'HB Models',
-    description: t('portfolio.projects.hbm.description'),
-    image: '/projects/hbmodels.png',
-    technologies: ['JavaScript', 'PHP', 'MariaDB', 'phpMyAdmin', 'HTML', 'CSS'],
-    platforms: t('portfolio.projects.hbm.platforms', { returnObjects: true }),
-    liveUrl: 'https://hbmodels.com.ar/'
-};
 
 export function renderPortfolio(container) {
     container.innerHTML = '';
@@ -70,7 +61,6 @@ export function renderPortfolio(container) {
     const main = document.createElement('main');
     main.className = 'pt-24 pb-16 min-h-screen relative';
 
-    // Fondo de video
     const videoBackground = document.createElement('div');
     videoBackground.className = 'absolute inset-0 overflow-hidden';
     videoBackground.innerHTML = `
@@ -83,7 +73,6 @@ export function renderPortfolio(container) {
     const wrapper = document.createElement('div');
     wrapper.className = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10';
 
-    // Sección de cliente destacado
     const featuredSection = document.createElement('div');
     featuredSection.className = 'mb-20';
     featuredSection.innerHTML = `
@@ -100,7 +89,6 @@ export function renderPortfolio(container) {
     featuredCard.appendChild(createProjectCard(getHbmProject()));
     featuredSection.appendChild(featuredCard);
 
-    // Sección de proyectos
     const projectsSection = document.createElement('div');
     projectsSection.className = 'mt-20';
     projectsSection.innerHTML = `
@@ -122,9 +110,12 @@ export function renderPortfolio(container) {
     wrapper.appendChild(featuredSection);
     wrapper.appendChild(projectsSection);
     main.appendChild(wrapper);
+    
+    // Add scroll to top button
+    main.appendChild(createScrollToTop());
+    
     container.appendChild(main);
 
-    // Solo actualiza el texto al cambiar de idioma
     document.addEventListener('languageChanged', () => {
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');

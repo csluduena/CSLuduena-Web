@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://csluduena.com/sitemap.xml
+Sitemap: https://csluduena.com/public/sitemap.xml

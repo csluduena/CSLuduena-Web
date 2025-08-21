@@ -56,25 +56,32 @@ function createTimelineItem(experience, index) {
 
     // Cambiar las clases y estilo según el tamaño de la pantalla
     item.className = isSmallScreen
-        ? 'relative flex flex-col items-center mb-12'
+        ? 'relative flex flex-col items-center mb-8 px-2 w-full'
         : `relative flex items-center mb-12 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`;
-    
+
+    // Mejoras mobile: tarjeta más ancha, padding, fuente, scroll horizontal para desbordes
+    if (isSmallScreen) {
+        item.style.width = '100%';
+        item.style.maxWidth = '98vw';
+        item.style.overflowX = 'auto';
+    }
+
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
 
     item.innerHTML = `
-        <div class="${isSmallScreen ? 'w-full text-center' : 'w-5/12'} ${!isSmallScreen && index % 2 === 0 ? 'text-right pr-8' : ''} ${!isSmallScreen && index % 2 !== 0 ? 'text-left pl-8' : ''}">
-            <div class="bg-dark-300 p-6 rounded-lg shadow-lg">
-                <span class="text-primary-400 font-semibold">
+        <div class="${isSmallScreen ? 'w-full text-left px-2' : 'w-5/12'} ${!isSmallScreen && index % 2 === 0 ? 'text-right pr-8' : ''} ${!isSmallScreen && index % 2 !== 0 ? 'text-left pl-8' : ''}">
+            <div class="bg-dark-300 p-4 rounded-lg shadow-lg" style="font-size:${isSmallScreen ? '0.98rem' : '1rem'}; line-height:1.5;">
+                <span class="text-primary-400 font-semibold block mb-1">
                     ${experience.date}
                 </span>
-                <h3 class="text-xl font-bold text-white mt-2">
+                <h3 class="text-lg font-bold text-white mt-1 mb-1">
                     ${experience.title}
                 </h3>
-                <h4 class="text-gray-400 font-medium">
+                <h4 class="text-gray-400 font-medium mb-1">
                     ${experience.company}
                 </h4>
-                <p class="text-gray-300 mt-2">
+                <p class="text-gray-300 mt-1" style="white-space:normal; word-break:break-word;">
                     ${experience.description}
                 </p>
             </div>

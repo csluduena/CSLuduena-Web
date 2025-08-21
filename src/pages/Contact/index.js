@@ -19,6 +19,20 @@ export function renderContact(container) {
         </p>
     `;
 
+    // Ajuste responsive solo después de crear wrapper y header
+    if (window.innerWidth < 768) {
+        main.style.minHeight = '100vh';
+        main.style.justifyContent = 'flex-start';
+        wrapper.style.marginTop = '4rem';
+        wrapper.style.width = '90vw';
+        wrapper.style.maxWidth = '90vw';
+        wrapper.style.marginLeft = '5vw';
+        wrapper.style.marginRight = '5vw';
+        wrapper.style.marginBottom = '4rem'; // margen inferior mayor para separar bien del footer
+        header.style.marginBottom = '1.5rem';
+        header.style.padding = '0 0.5rem';
+    }
+
     // Animate header
     setTimeout(() => {
         header.style.transition = 'all 0.8s ease-out';

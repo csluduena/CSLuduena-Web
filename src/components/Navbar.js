@@ -147,6 +147,36 @@ export function setupNavbar() {
             mobileMenu.classList.toggle('hidden');
         });
 
+        // Cerrar menú mobile al hacer clic en cualquier enlace o cambiar idioma
+        mobileMenu.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mejorar visual del menú mobile (solo padding y separación, sin color ni border-radius ni blur ni box-shadow)
+        if (window.innerWidth < 768) {
+            mobileMenu.style.background = '';
+            mobileMenu.style.backdropFilter = '';
+            mobileMenu.style.width = '';
+            mobileMenu.style.left = '';
+            mobileMenu.style.right = '';
+            mobileMenu.style.borderRadius = '';
+            mobileMenu.style.boxShadow = '';
+            mobileMenu.style.position = '';
+            mobileMenu.style.top = '';
+            mobileMenu.style.zIndex = '';
+            mobileMenu.classList.add('bg-dark-300');
+            mobileMenu.querySelectorAll('a, button').forEach(el => {
+                el.style.padding = '1rem 1.5rem';
+                el.style.fontSize = '1.1rem';
+                el.style.margin = '0.25rem 0';
+                el.style.display = 'block';
+            });
+        }
+
         const handleLanguageChange = () => {
             const newLang = i18next.language === 'en' ? 'es' : 'en';
             const currentPath = window.location.pathname;

@@ -13,7 +13,7 @@ export function renderAbout(container) {
     profileSection.className = 'text-center mb-16 opacity-0 transform translate-y-4';
     profileSection.innerHTML = `
         <div class="mb-8">
-            <img src="/src/assets/profile.jpg" alt="Carlos Sebastian Ludueña" class="rounded-full mx-auto object-cover border-4 border-primary-500" style="width: 19rem; height: 19rem" loading="lazy"> 
+            <img src="/src/assets/profile.jpg" alt="Carlos Sebastian Ludueña" class="rounded-full mx-auto object-cover border-4 border-primary-500" style="width: 19rem; height: 19rem; max-width: 90vw; max-height: 90vw; ${window.innerWidth < 768 ? 'width: 8.5rem; height: 8.5rem;' : ''}" loading="lazy"> 
         
         </div>
         <h1 class="text-4xl font-bold text-white mb-4">
@@ -32,6 +32,16 @@ export function renderAbout(container) {
     try {
         const skillsSection = createSkills();
         wrapper.appendChild(skillsSection);
+        // Achicar recuadros de skills en mobile (después de agregarlos)
+        if (window.innerWidth < 768) {
+            wrapper.style.padding = '0 0.5rem';
+            // Seleccionar todos los elementos con clases que contienen 'bg-dark-300' (incluyendo variantes como 'bg-dark-300/80')
+            const cards = Array.from(wrapper.querySelectorAll('[class*="bg-dark-300"]'));
+            cards.forEach(card => {
+                card.style.padding = '1rem';
+                card.style.fontSize = '0.95rem';
+            });
+        }
     } catch (error) {
         console.error('Error creating skills section:', error);
         const errorMessage = document.createElement('div');

@@ -20,34 +20,34 @@
     "skills": {
         "frontend": {
             "title": "Frontend",
-            "description": "Crafting engaging and functional user interfaces with the latest web technologies. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>HTML</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>CSS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>JavaScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>ReactJS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Vue.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Bootstrap</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Tailwind</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Microfrontend</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo ERP</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "description": "Crafting engaging and functional user interfaces with the latest web technologies. <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>HTML</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>CSS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>JavaScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>TypeScript</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>ReactJS</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Vue.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Bootstrap</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Tailwind</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo ERP</span></div>",
             "technologies": [
                 "HTML",
                 "CSS",
                 "JavaScript",
+                "TypeScript",
                 "ReactJS",
                 "Vue.js",
                 "Bootstrap",
                 "Tailwind",
-                "Microfrontend",
-                "Odoo ERP",
-                "Salesforce"
+                "Odoo ERP"
             ]
         },
         "backend": {
             "title": "Backend",
-            "description": "Building robust and scalable foundation of web applications, ensuring seamless functionality and efficient data management.  <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Node.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>SQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>MongoDB</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Mongoose</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Firebase</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Postman</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Swagger</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Git</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo ERP</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Salesforce</span></div>",
+            "description": "Building robust and scalable foundation of web applications, ensuring seamless functionality and efficient data management.  <br><br> <div class='flex flex-wrap gap-2'><span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Node.js</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Python</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>SQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>PostgreSQL</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>MongoDB</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Mongoose</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Firebase</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Postman</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Swagger</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Git</span> <span class='inline-block bg-dark-400 text-gray-200 px-2 py-1 rounded text-sm'>Odoo ERP</span></div>",
             "technologies": [
                 "Node.js",
+                "Python",
                 "SQL",
+                "PostgreSQL",
                 "MongoDB",
                 "Mongoose",
                 "Firebase",
                 "Postman",
                 "Swagger",
                 "Git",
-                "Odoo ERP",
-                "Salesforce"
+                "Odoo ERP"
             ]
         },
         "adaptable": {
@@ -72,33 +72,8 @@
         }
     },
     "about": {
-        "intro": "Hi, I am Carlos Sebastian Ludueña",
-        "experience": {
-            "indie": {
-                "title": "Full Stack Developer",
-                "company": "INDIE Argentina",
-                "period": "Jan 2023 - Present",
-                "description": "I currently work as a Full Stack Developer at INDIE Argentina, where I specialize in the development and maintenance of custom websites using Odoo ERP. My role focuses on creating comprehensive solutions that encompass both frontend and backend, implementing complex functionalities, designing attractive interfaces and optimizing performance with the most appropriate technologies. I contribute to the success of web projects that generate a positive impact on clients."
-            },
-            "freelance": {
-                "title": "Web Development",
-                "company": "Freelance",
-                "period": "Dec 2011 - Present",
-                "description": "I continue my work as a freelance web developer, a path I started with pure HTML and CSS and that has led me to master technologies such as React, JavaScript, Node.js and MariaDB. In addition, I have gained experience in testing with Postman, using Firebase and creating responsive designs. I have learned to communicate effectively with clients and offer customized solutions."
-            },
-            "st-computacion": {
-                "title": "Community Manager",
-                "company": "ST Computacion",
-                "period": "Aug 2011 - Dec 2022",
-                "description": "My experience as a Community Manager has given me a deep understanding of the digital ecosystem and online marketing strategies. I have developed communication skills, social media management and data analysis. I have also learned to work in a team, coordinate projects and manage online reputation crises."
-            },
-            "ep-soluciones": {
-                "title": "Virtual Assistant",
-                "company": "EP Soluciones",
-                "period": "Jan 2007 - July 2011",
-                "description": "In my role as a Virtual Assistant, I developed organizational, time management and attention to detail skills. I learned to optimize administrative processes, manage communication with clients and work autonomously and proactively. This experience has provided me with a solid foundation to work in professional environments."
-            }
-        }
+        "intro": "About Me",
+        "description": "I am a versatile Full Stack Developer with strong experience in both frontend and backend development. My expertise includes JavaScript, TypeScript, ReactJS, Node.js, Python, Odoo ERP, and database management with SQL, PostgreSQL, and MongoDB. I focus on delivering high-quality, tailored solutions that combine functionality, scalability, and a great user experience.<br><br>Beyond my technical skills, I bring adaptability, problem-solving, and a proactive mindset to every project. I enjoy working in collaborative environments as well as independently, always maintaining responsibility, attention to detail, and a results-oriented approach. My goal is to contribute to projects where technology drives growth, efficiency, and innovation."
     },
     "portfolio": {
         "title": "Featured Projects",

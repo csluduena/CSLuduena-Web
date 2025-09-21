@@ -44,14 +44,35 @@ function getProjects() {
 }
 
 function getHbmProject() {
+    const technologies = t('portfolio.projects.hbm.technologies', { returnObjects: true });
+    
+    // Fallback con tecnologías que se traducen correctamente
+    const fallbackTechnologies = [
+        'JavaScript', 'PHP', 'MariaDB', 'PHPMyAdmin', 'NestJS', 'Vercel', 'Hostinger VPS', 'DevOps', 
+        t('portfolio.projects.hbm.technologies.8') || 'Desarrollo Web', 
+        t('portfolio.projects.hbm.technologies.9') || 'Gestión Académica'
+    ];
+    
     return {
         id: 'hbm',
         title: 'HB Models',
         description: t('portfolio.projects.hbm.description'),
         image: '/projects/hbmodels.png',
-        technologies: ['JavaScript', 'PHP', 'MariaDB', 'phpMyAdmin', 'HTML', 'CSS'],
+        technologies: Array.isArray(technologies) ? technologies : fallbackTechnologies,
         platforms: t('portfolio.projects.hbm.platforms', { returnObjects: true }) || [],
         liveUrl: 'https://hbmodels.com.ar/'
+    };
+}
+
+function getCapitansaltoProject() {
+    return {
+        id: 'capitansalto',
+        title: 'Capitán Salto',
+        description: t('portfolio.projects.capitansalto.description'),
+        image: '/projects/capitansalto.png',
+        technologies: ['React.js', 'Node.js', 'TypeScript', 'MongoDB', 'Vercel', 'Hostinger VPS', 'MercadoPago', 'JavaScript', 'DevOps'],
+        platforms: t('portfolio.projects.capitansalto.platforms', { returnObjects: true }) || [],
+        liveUrl: 'https://www.capitansalto.com.ar/'
     };
 }
 
@@ -84,10 +105,11 @@ export function renderPortfolio(container) {
         </p>
     `;
 
-    const featuredCard = document.createElement('div');
-    featuredCard.className = 'max-w-5xl mx-auto';
-    featuredCard.appendChild(createProjectCard(getHbmProject()));
-    featuredSection.appendChild(featuredCard);
+    const featuredCards = document.createElement('div');
+    featuredCards.className = 'grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto';
+    featuredCards.appendChild(createProjectCard(getCapitansaltoProject()));
+    featuredCards.appendChild(createProjectCard(getHbmProject()));
+    featuredSection.appendChild(featuredCards);
 
     const projectsSection = document.createElement('div');
     projectsSection.className = 'mt-20';

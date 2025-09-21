@@ -14,7 +14,7 @@
     },
     "hero": {
         "role": "Full Stack Developer",
-        "technologies": "JavaScript | Odoo ERP"
+        "technologies": "JavaScript, TypeScript, React.js, Python/Odoo | Administration and Management"
 
     },
     "skills": {
@@ -73,7 +73,37 @@
     },
     "about": {
         "intro": "About Me",
-        "description": "I am a versatile Full Stack Developer with strong experience in both frontend and backend development. My expertise includes JavaScript, TypeScript, ReactJS, Node.js, Python, Odoo ERP, and database management with SQL, PostgreSQL, and MongoDB. I focus on delivering high-quality, tailored solutions that combine functionality, scalability, and a great user experience.<br><br>Beyond my technical skills, I bring adaptability, problem-solving, and a proactive mindset to every project. I enjoy working in collaborative environments as well as independently, always maintaining responsibility, attention to detail, and a results-oriented approach. My goal is to contribute to projects where technology drives growth, efficiency, and innovation."
+        "description": "I am a versatile Full Stack Developer with strong experience in both frontend and backend development. My expertise includes JavaScript, TypeScript, ReactJS, Node.js, Python, Odoo ERP, and database management with SQL, PostgreSQL, and MongoDB. I focus on delivering high-quality, tailored solutions that combine functionality, scalability, and a great user experience.<br><br>Beyond my technical skills, I bring adaptability, problem-solving, and a proactive mindset to every project. I enjoy working in collaborative environments as well as independently, always maintaining responsibility, attention to detail, and a results-oriented approach. My goal is to contribute to projects where technology drives growth, efficiency, and innovation.",
+        "experience": {
+            "freelance": {
+                "title": "Web Developer",
+                "company": "Freelance (Self employed)",
+                "period": "December 2011 - Present (13 years 10 months)",
+                "location": "Remote",
+                "description": "As a freelance web developer, I work on the creation, optimization, and maintenance of web applications, covering both frontend and backend. I specialize in frontend development with JavaScript, TypeScript, React.js, and the MERN stack, as well as in the customization and implementation of Odoo modules using QWeb. On the backend, I am proficient in technologies such as Node.js, Express.js, JavaScript, and Python, along with databases like MongoDB, PostgreSQL, and MariaDB. I also have experience in deploying and managing VPS servers, ensuring stable and secure production environments.<br><br><b>Responsibilities:</b><br>- Development and optimization of web interfaces (HTML, CSS, SCSS, TypeScript, JavaScript, React.js, MERN stack).<br>- Creation, inheritance, and customization of Odoo modules (QWeb, Python, JavaScript).<br>- Backend development with Node.js, Express.js, and Python.<br>- Database management and maintenance (MongoDB, PostgreSQL, MariaDB).<br>- Implementation of SEO practices.<br>- Configuration, deployment, and management of VPS environments.<br>- Collaborative work in multidisciplinary teams and Full Stack projects.<br><br><b>Key Skills:</b><br>- Frontend: HTML, CSS, SCSS, TypeScript, JavaScript, React.js, MERN stack.<br>- Backend: Node.js, Express.js, Python, JavaScript.<br>- Odoo: module inheritance and customization, QWeb, frontend-backend integration.<br>- Databases: MongoDB, PostgreSQL, MariaDB.<br>- VPS: configuration, deployment, and maintenance.<br>- SEO and web performance optimization.<br>- Teamwork and adaptability to dynamic environments."
+            },
+            "indie": {
+                "title": "Odoo Specialist | Full Stack Developer",
+                "company": "INDIE Argentina",
+                "period": "January 2023 - April 2025 (2 years 4 months)",
+                "location": "Buenos Aires Province, Argentina",
+                "description": "As a Full Stack Developer specialized in Odoo, I focus on the inheritance, development, and customization of modules, both frontend and backend. I use HTML, CSS, JavaScript, and QWeb for the interface, and Python with PostgreSQL for business logic and data management. My work optimizes the user experience (UI/UX) and ensures scalable solutions tailored to client needs.<br><br><b>Responsibilities:</b><br>- Development and customization of Odoo modules (frontend and backend).<br>- Creation of themes and templates with QWeb.<br>- Integration with external add-ons.<br>- Responsive optimization and accessibility.<br>- Backend development in Python with PostgreSQL.<br>- Testing and QA of functionalities.<br>- Technical support and maintenance.<br><br><b>Key Skills:</b><br>- Odoo (module inheritance and customization).<br>- HTML, CSS, JavaScript, QWeb.<br>- Python, PostgreSQL.<br>- UI/UX and responsive design.<br>- Frontend-backend integration."
+            },
+            "st-computacion": {
+                "title": "Community Manager",
+                "company": "St Computacion Soluciones Tecnológicas",
+                "period": "September 2019 - December 2022 (3 years 4 months)",
+                "location": "Argentina",
+                "description": "As a Community Manager, I was responsible for organizing and managing content across various platforms, including social media, graphic design, and client data management. I used tools such as Adobe Photoshop and the Office suite to create and edit image and video content, ensuring that the material was visually appealing and aligned with brand objectives.<br><br>I worked closely with clients, managing relationships and projects effectively in both English and Spanish. I implemented agile methodologies to coordinate campaigns and ensure smooth communication between the team and clients. My work involved not only creating and scheduling content but also greenlighting material, ensuring each piece met quality standards before publication.<br><br>I collaborated with designers, copywriters, and marketing specialists, ensuring each campaign was perfectly aligned with client needs and the overall brand strategy."
+            },
+            "ep-soluciones": {
+                "title": "Virtual Office Assistant",
+                "company": "EP Soluciones.",
+                "period": "February 2007 - July 2011 (4 years 6 months)",
+                "location": "Buenos Aires, Buenos Aires Province, Argentina",
+                "description": "In my role as a Virtual Assistant, I efficiently managed client data using Hubspot, ensuring the accuracy and constant updating of information. I was responsible for managing client status, optimizing follow-up and support processes. My main responsibility was to respond to client requests, working remotely to resolve any queries, issues, or concerns they might have.<br><br>I implemented agile methodologies to improve efficiency in data management and worked closely with sales and marketing teams, facilitating smooth communication and aligning business strategies with client needs. I worked both individually in customer service and as part of a team for data management, ensuring comprehensive and efficient service."
+            }
+        }
     },
     "portfolio": {
         "title": "Featured Projects",
@@ -94,19 +124,72 @@
                 "description": "Interactive web application showcasing JavaScript capabilities"
             },
             "hbm": {
-                "description": "Modeling agency management system with comprehensive features for user registration, payment processing, and administrative controls.",
+                "description": "Development and implementation of a comprehensive web platform for HBModels - Student Academy, with proprietary VPS infrastructure and technological architecture designed to ensure security, scalability, and efficient management of students and administrators.<br><br><b>Architecture & Technology:</b><br>- Frontend: Intuitive web interface developed with JavaScript, optimized for accessibility and performance.<br>- Backend: NestJS with PHP, MariaDB and PHPMyAdmin, hosted on Hostinger VPS, configured and managed to ensure security, availability, and total data control.<br>- DevOps: Management of deployments, updates, and libraries to maintain a stable and efficient platform.<br><br><b>Implemented Systems:</b><br>- Student panel: Secure registration and authentication; profile with personal data, tutor, contact, class day and time; data modification and payment receipt upload.<br>- Administrative panel: Complete student consultation with history, receipts, class days and times; advanced search by class, schedule, or receipt; centralized management of all information.<br>- Receipt management: Visualization and control of all payments made, both per student and globally, with detailed history and quick access from the administrative panel.<br><br>This system centralizes academy administration, facilitating student and payment management, improving operational efficiency, and offering a secure and modern experience for both students and administrators.",
+                "technologies": [
+                    "JavaScript",
+                    "PHP",
+                    "MariaDB",
+                    "PHPMyAdmin",
+                    "NestJS",
+                    "Vercel",
+                    "Hostinger VPS",
+                    "DevOps",
+                    "Web Development",
+                    "Academic Management"
+                ],
                 "platforms": [
-                    "User Registration & Login",
-                    "Monthly Payment Upload System",
-                    "Admin Payment Management",
-                    "Automated Payment Reminders",
-                    "Password Recovery",
-                    "Real-Time Profile Updates",
-                    "Admin Filtering & Custom Views",
-                    "Hostinger",
+                    "Student panel",
+                    "Administrative panel",
+                    "Receipt management",
+                    "Secure registration and authentication",
+                    "Advanced search",
+                    "Payment control",
+                    "Hostinger VPS",
                     "Vercel"
                 ]
+            },
+            "capitansalto": {
+                "description": "Development and implementation of a comprehensive web platform for Capitán Salto, a children's entertainment and recreation center, with infrastructure and technological architecture built from scratch to ensure scalability, security, and total customization.<br><br><b>Architecture & Technology:</b><br>- Frontend: React with TypeScript, hosted on Vercel (premium plan) for maximum performance and availability.<br>- Backend: Node.js with MongoDB connection, secure authentication, and complete administrative panel for centralized management of all modules. Hosted on a Hostinger VPS, configured and optimized from scratch (structure, deployment, and security).<br><br><b>Implemented Systems:</b><br>- Professional sales system: Creation of single or open sales for events, with real-time payment, invoicing, and management capabilities.<br>- Kitchen monitoring system: Any product marked as 'to prepare' is automatically sent to the kitchen monitor with stock control and raw material management, all configurable without developer intervention.<br>- Custom calendar system: Configuration of schedules, availability, and dates for any year, adjustable by the owner at any time.<br>- Ticket sales system: Online reservations, deposit management, and WhatsApp verification for enhanced client and staff security.<br>- Dynamic configurations: Real-time management of prices, schedules, products, and stock from the admin panel.<br>- Event & birthday management: Control of guest limits, pricing by guest range, custom menus, and additional charges.<br><br><b>Online Payments:</b><br>Complete MercadoPago integration for secure, automated payment and deposit processing.<br><br>This project centralizes and professionalizes business operations, reducing administrative time, improving internal coordination (especially in the kitchen), and delivering a modern, secure client experience.",
+                "technologies": [
+                    "React.js",
+                    "Node.js",
+                    "TypeScript",
+                    "MongoDB",
+                    "Vercel",
+                    "Hostinger VPS",
+                    "MercadoPago",
+                    "JavaScript",
+                    "DevOps"
+                ],
+                "platforms": [
+                    "Professional Sales System",
+                    "Kitchen Monitoring",
+                    "Custom Calendar",
+                    "Ticket Sales & Reservations",
+                    "Dynamic Configurations",
+                    "Event & Birthday Management",
+                    "Online Payments"
+                ]
             }
+        },
+        "capitansaltoImages": {
+            "1": "1- Main Page",
+            "2": "2- Tickets Section",
+            "3": "3- Administration Panel",
+            "4": "4- Membership System",
+            "5": "5- Schedule System for Appointments",
+            "6": "6- Appointment System for Birthdays and Free Jump (Events)",
+            "7": "7- Sales System",
+            "8": "8- Cash Register System",
+            "9": "9- Products System",
+            "10": "10- Product Loading System",
+            "11": "11- Raw Materials System (Assigned to Products)",
+            "12": "12- Payment Methods Management",
+            "13": "13- QR Menu Configuration (No Programmer Required)",
+            "14": "14- Dynamic QR Menu, products come from the QR Menu product configuration and from products themselves",
+            "15": "15- Kitchen Monitor System, displays sold products that require kitchen preparation on kitchen monitors (Real-time Updates)",
+            "16": "16- Dynamic Customer Rewards System, configured without programmer needed, from its own configuration, uses dynamically selected products",
+            "17": "17- Employee Management"
         }
     },
     "contact": {

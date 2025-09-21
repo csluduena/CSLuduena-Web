@@ -14,7 +14,7 @@
     },
     "hero": {
         "role": "Desarrollador Full Stack",
-        "technologies": "JavaScript | Odoo ERP"
+        "technologies": "JavaScript, TypeScript, React.js, Python/Odoo | Administrativo y Gestiones."
     },
     "skills": {
         "frontend": {
@@ -72,7 +72,37 @@
     },
     "about": {
         "intro": "Sobre mí",
-        "description": "Soy un Desarrollador Full Stack versátil, con sólida experiencia en desarrollo frontend y backend. Mi experiencia incluye JavaScript, TypeScript, ReactJS, Node.js, Python, Odoo ERP y gestión de bases de datos con SQL, PostgreSQL y MongoDB. Me enfoco en entregar soluciones de alta calidad, a medida, que combinen funcionalidad, escalabilidad y una excelente experiencia de usuario.<br><br>Más allá de mis habilidades técnicas, aporto adaptabilidad, capacidad de resolución de problemas y una mentalidad proactiva a cada proyecto. Disfruto trabajando tanto en entornos colaborativos como de manera independiente, siempre con responsabilidad, atención al detalle y orientación a resultados. Mi objetivo es contribuir en proyectos donde la tecnología impulse el crecimiento, la eficiencia y la innovación."
+        "description": "Soy un Desarrollador Full Stack versátil, con sólida experiencia en desarrollo frontend y backend. Mi experiencia incluye JavaScript, TypeScript, ReactJS, Node.js, Python, Odoo ERP y gestión de bases de datos con SQL, PostgreSQL y MongoDB. Me enfoco en entregar soluciones de alta calidad, a medida, que combinen funcionalidad, escalabilidad y una excelente experiencia de usuario.<br><br>Más allá de mis habilidades técnicas, aporto adaptabilidad, capacidad de resolución de problemas y una mentalidad proactiva a cada proyecto. Disfruto trabajando tanto en entornos colaborativos como de manera independiente, siempre con responsabilidad, atención al detalle y orientación a resultados. Mi objetivo es contribuir en proyectos donde la tecnología impulse el crecimiento, la eficiencia y la innovación.",
+        "experience": {
+            "freelance": {
+                "title": "Desarrollador web",
+                "company": "Freelance (Self employed)",
+                "period": "diciembre de 2011 - actualidad (13 años 10 meses)",
+                "location": "En remoto",
+                "description": "En mi rol como desarrollador web freelance, trabajo en la creación, optimización y mantenimiento de aplicaciones web, abarcando tanto frontend como backend. Me especializo en el desarrollo frontend con JavaScript, TypeScript, React.js y el stack MERN, así como en la personalización e implementación de módulos en Odoo utilizando QWeb. En backend, domino tecnologías como Node.js, Express.js, JavaScript y Python, junto con bases de datos como MongoDB, PostgreSQL y MariaDB. También tengo experiencia en el despliegue y administración de servidores VPS, garantizando entornos de producción estables y seguros.<br><br><b>Responsabilidades:</b><br>- Desarrollo y optimización de interfaces web (HTML, CSS, SCSS, TypeScript, JavaScript, React.js, stack MERN).<br>- Creación, herencia y personalización de módulos Odoo (QWeb, Python, JavaScript).<br>- Desarrollo backend con Node.js, Express.js y Python.<br>- Gestión y mantenimiento de bases de datos (MongoDB, PostgreSQL, MariaDB).<br>- Implementación de prácticas de SEO.<br>- Configuración, despliegue y administración de entornos en VPS.<br>- Trabajo colaborativo en equipos multidisciplinarios y proyectos Full Stack.<br><br><b>Aptitudes Clave:</b><br>- Frontend: HTML, CSS, SCSS, TypeScript, JavaScript, React.js, stack MERN.<br>- Backend: Node.js, Express.js, Python, JavaScript.<br>- Odoo: herencia y personalización de módulos, QWeb, integración frontend-backend.<br>- Bases de datos: MongoDB, PostgreSQL, MariaDB.<br>- VPS: configuración, despliegue y mantenimiento.<br>- SEO y optimización de rendimiento web.<br>- Trabajo en equipo y adaptabilidad a entornos dinámicos."
+            },
+            "indie": {
+                "title": "Odoo Specialist | Full Stack Developer",
+                "company": "INDIE Argentina",
+                "period": "enero de 2023 - abril de 2025 (2 años 4 meses)",
+                "location": "Provincia de Buenos Aires, Argentina",
+                "description": "Como Desarrollador Full Stack especializado en Odoo, me centro en la herencia, desarrollo y personalización de módulos, tanto en frontend como en backend. Utilizo HTML, CSS, JavaScript y QWeb para la interfaz, y Python con PostgreSQL para la lógica de negocio y la gestión de datos. Mi trabajo optimiza la experiencia de usuario (UI/UX) y asegura soluciones escalables, adaptadas a las necesidades del cliente.<br><br><b>Responsabilidades:</b><br>- Desarrollo y personalización de módulos Odoo (frontend y backend).<br>- Creación de temas y plantillas con QWeb.<br>- Integración con complementos externos.<br>- Optimización responsive y accesibilidad.<br>- Desarrollo backend en Python con PostgreSQL.<br>- Pruebas y QA de funcionalidades.<br>- Soporte y mantenimiento técnico.<br><br><b>Aptitudes clave:</b><br>- Odoo (herencia y personalización de módulos).<br>- HTML, CSS, JavaScript, QWeb.<br>- Python, PostgreSQL.<br>- UI/UX y responsive design.<br>- Integración frontend-backend."
+            },
+            "st-computacion": {
+                "title": "Community Manager",
+                "company": "St Computacion Soluciones Tecnológicas",
+                "period": "septiembre de 2019 - diciembre de 2022 (3 años 4 meses)",
+                "location": "Argentina",
+                "description": "En mi rol como Community Manager, fui responsable de la organización y administración de contenido en diversas plataformas, incluyendo medios de comunicación social, diseño gráfico, y gestión de datos del cliente. Utilicé herramientas como Adobe Photoshop y el paquete Office para la creación y edición de contenido en imagen y video, asegurando que el material fuera visualmente atractivo y alineado con los objetivos de la marca.<br><br>Colaboré estrechamente con clientes, gestionando relaciones y proyectos de manera efectiva tanto en inglés como en español. Implementé metodologías ágiles para coordinar campañas y asegurar una comunicación fluida entre el equipo y los clientes. Mi trabajo no solo consistió en crear y programar contenido, sino también en greenlighting de material, garantizando que cada pieza cumpliera con los estándares de calidad antes de su publicación.<br><br>Trabajé en equipo con diseñadores, redactores y especialistas en marketing, asegurando que cada campaña estuviera perfectamente alineada con las necesidades del cliente y la estrategia general de la marca."
+            },
+            "ep-soluciones": {
+                "title": "Virtual Office Assistant",
+                "company": "EP Soluciones.",
+                "period": "febrero de 2007 - julio de 2011 (4 años 6 meses)",
+                "location": "Buenos Aires, Provincia de Buenos Aires, Argentina",
+                "description": "En mi rol como Virtual Assistant, gestioné eficazmente los datos de clientes utilizando Hubspot, asegurando la precisión y actualización constante de la información. Me encargué de administrar el estado de los clientes, optimizando los procesos de seguimiento y atención. Mi principal responsabilidad era responder a las solicitudes del cliente, trabajando de manera remota para resolver cualquier consulta, inconveniente o duda que pudieran tener.<br><br>Implementé metodologías ágiles para mejorar la eficiencia en la administración de datos y colaboré estrechamente con los equipos de ventas y marketing, facilitando una comunicación fluida y alineando las estrategias empresariales con las necesidades del cliente. Trabajé tanto de manera individual en atención al cliente como en equipo para la gestión de datos, garantizando un servicio integral y eficiente."
+            }
+        }
     },
     "portfolio": {
         "title": "Proyectos Destacados",
@@ -93,19 +123,72 @@
                 "description": "Aplicación web interactiva que muestra las capacidades de JavaScript"
             },
             "hbm": {
-                "description": "Sistema de gestión de agencia de modelos con características completas para registro de usuarios, procesamiento de pagos y controles administrativos.",
+                "description": "Desarrollo e implementación de una plataforma web integral para HBModels - Academia de Alumnos, con infraestructura propia en VPS y arquitectura tecnológica diseñada para garantizar seguridad, escalabilidad y gestión eficiente de alumnos y administradores.<br><br><b>Arquitectura y tecnología:</b><br>- Frontend: Interfaz web intuitiva desarrollada con JavaScript, optimizada para accesibilidad y rendimiento.<br>- Backend: NestJS con PHP, MariaDB y PHPMyAdmin, alojado en VPS de Hostinger, configurado y administrado para garantizar seguridad, disponibilidad y control total de datos.<br>- DevOps: Gestión de despliegues, actualizaciones y librerías para mantener la plataforma estable y eficiente.<br><br><b>Sistemas implementados:</b><br>- Panel de alumnos: Registro y autenticación segura; perfil con datos personales, tutor, contacto, día y horario de cursada; modificación de datos y subida de comprobantes de pago.<br>- Panel administrativo: Consulta completa de alumnos con historial, comprobantes, días y horarios de clase; búsqueda avanzada por clase, horario o comprobante; gestión de toda la información de manera centralizada.<br>- Gestión de comprobantes: Visualización y control de todos los pagos realizados, tanto por alumno como de manera global, con historial detallado y acceso rápido desde el panel administrativo.<br><br>Este sistema centraliza la administración de la academia, facilitando la gestión de alumnos y pagos, mejorando la eficiencia operativa y ofreciendo una experiencia segura y moderna tanto para alumnos como para administradores.",
+                "technologies": [
+                    "JavaScript",
+                    "PHP",
+                    "MariaDB",
+                    "PHPMyAdmin",
+                    "NestJS",
+                    "Vercel",
+                    "Hostinger VPS",
+                    "DevOps",
+                    "Desarrollo Web",
+                    "Gestión Académica"
+                ],
                 "platforms": [
-                    "Registro y Login de Usuarios",
-                    "Sistema de Carga de Pagos Mensuales",
-                    "Gestión de Pagos Administrativa",
-                    "Recordatorios Automáticos de Pago",
-                    "Recuperación de Contraseña",
-                    "Actualizaciones de Perfil en Tiempo Real",
-                    "Filtrado Administrativo y Vistas Personalizadas",
-                    "Hostinger",
+                    "Panel de alumnos",
+                    "Panel administrativo",
+                    "Gestión de comprobantes",
+                    "Registro y autenticación segura",
+                    "Búsqueda avanzada",
+                    "Control de pagos",
+                    "Hostinger VPS",
                     "Vercel"
                 ]
+            },
+            "capitansalto": {
+                "description": "Desarrollo e implementación de una plataforma web integral para Capitán Salto, centro de entretenimiento y recreación infantil, con una infraestructura y arquitectura tecnológica montada desde cero para garantizar escalabilidad, seguridad y personalización total.<br><br><b>Arquitectura y tecnología:</b><br>- Frontend: React con TypeScript, hospedado en Vercel (plan premium) para máxima performance y disponibilidad.<br>- Backend: Node.js con conexión a MongoDB, autenticación segura y panel administrativo completo para la gestión centralizada de todos los módulos. Hospedado en un VPS de Hostinger, configurado y optimizado desde cero (estructura, despliegue y seguridad).<br><br><b>Sistemas implementados:</b><br>- Sistema de ventas profesional: Creación de ventas singulares o abiertas para eventos, con capacidad de cobrar, facturar y gestionar operaciones en tiempo real.<br>- Sistema de monitoreo de cocina: Todo producto marcado como 'a preparar' se envía automáticamente al monitor de cocina con control de stock y gestión de materias primas, todo configurable sin intervención de un desarrollador.<br>- Sistema de calendario personalizado: Configuración de horarios, disponibilidad y fechas para cualquier año, ajustable por el dueño en cualquier momento.<br>- Sistema de venta de tickets: Reservas online, gestión de señas, y verificación de reservas vía WhatsApp para reforzar la seguridad de clientes y empleadores.<br>- Configuraciones dinámicas: Administración de precios, horarios, productos y stock en tiempo real desde el panel.<br>- Gestión de eventos y cumpleaños: Control de cupos, precios por rango de invitados, menús personalizados y cobro de adicionales.<br><br><b>Pagos online:</b><br>Integración completa con MercadoPago para procesar pagos y señas de forma automática y segura.<br><br>Este proyecto centraliza y profesionaliza la operación del negocio, reduciendo tiempos administrativos, mejorando la coordinación interna (especialmente en cocina) y ofreciendo una experiencia moderna y segura al cliente.",
+                "technologies": [
+                    "React.js",
+                    "Node.js",
+                    "TypeScript",
+                    "MongoDB",
+                    "Vercel",
+                    "Hostinger VPS",
+                    "MercadoPago",
+                    "JavaScript",
+                    "DevOps"
+                ],
+                "platforms": [
+                    "Sistema de ventas profesional",
+                    "Monitoreo de cocina",
+                    "Calendario personalizado",
+                    "Venta de tickets y reservas",
+                    "Configuraciones dinámicas",
+                    "Gestión de eventos y cumpleaños",
+                    "Pagos online"
+                ]
             }
+        },
+        "capitansaltoImages": {
+            "1": "1- Página principal",
+            "2": "2- Sección de tickets",
+            "3": "3- Panel de administración",
+            "4": "4- Sistema membresías",
+            "5": "5- Sistema horarios para agenda",
+            "6": "6- Sistema de agenda para Cumpleaños y Salto Libres (Eventos)",
+            "7": "7- Sistema de ventas",
+            "8": "8- Sistema de arqueo de caja",
+            "9": "9- Sistema de productos",
+            "10": "10- Sistema de carga de productos",
+            "11": "11- Sistema de materias primas (Se asignan a los productos)",
+            "12": "12- Gestión de métodos de pago",
+            "13": "13- Configuración de Menú QR (No requiere programador)",
+            "14": "14- Menú QR Dinámico, provienen los productos desde la configuración de productos para el Menú QR y desde productos en si",
+            "15": "15- Sistema de monitor de cocina, reflejan los productos vendidos que requieren de cocina en monitores de la misma (Actualiza en tiempo real)",
+            "16": "16- Sistema de recompensas para clientes dinamico, se configura sin necesidad de programador, desde la configuración de la misma, utiliza los productos seleccionados dinámicamente",
+            "17": "17- Gestión de empleados"
         }
     },
     "contact": {

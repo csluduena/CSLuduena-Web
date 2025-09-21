@@ -11,18 +11,18 @@ export function createTimeline() {
 
     const experiences = [
         {
-            id: 'indie',
-            date: t('about.experience.indie.period'),
-            title: t('about.experience.indie.title'),
-            company: t('about.experience.indie.company'),
-            description: t('about.experience.indie.description')
-        },
-        {
             id: 'freelance',
             date: t('about.experience.freelance.period'),
             title: t('about.experience.freelance.title'),
             company: t('about.experience.freelance.company'),
             description: t('about.experience.freelance.description')
+        },
+        {
+            id: 'indie',
+            date: t('about.experience.indie.period'),
+            title: t('about.experience.indie.title'),
+            company: t('about.experience.indie.company'),
+            description: t('about.experience.indie.description')
         },
         {
             id: 'st-computacion',

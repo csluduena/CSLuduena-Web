@@ -53,14 +53,17 @@ logMessage('Webhook received for push to main branch');
 // Ejecutar el script de despliegue
 $output = [];
 $returnCode = 0;
-exec('bash ./deploy.sh 2>&1', $output, $returnCode);
+$scriptPath = __DIR__ . '/deploy.sh';
+exec("bash $scriptPath 2>&1", $output, $returnCode);
 
 if ($returnCode === 0) {
     logMessage('Deployment successful');
+    logMessage('Script output: ' . implode("\n", $output));
     echo 'Deployment successful';
 } else {
     logMessage('Deployment failed: ' . implode("\n", $output));
+    logMessage('Return code: ' . $returnCode);
     http_response_code(500);
-    echo 'Deployment failed';
+    echo 'Deployment failed: ' . implode("\n", $output);
 }
 ?>

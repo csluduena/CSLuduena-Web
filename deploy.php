@@ -24,7 +24,7 @@ $payload = file_get_contents('php://input');
 $data = json_decode($payload, true);
 
 // Verificar que el payload es válido
-if (json_last_error() !== JSON_OK) {
+if (json_last_error() !== JSON_ERROR_NONE) {
     logMessage('Error: Invalid JSON payload');
     http_response_code(400);
     exit('Invalid JSON');
@@ -53,7 +53,7 @@ logMessage('Webhook received for push to main branch');
 // Ejecutar el script de despliegue
 $output = [];
 $returnCode = 0;
-exec('bash /path/to/deploy.sh 2>&1', $output, $returnCode);
+exec('bash ./deploy.sh 2>&1', $output, $returnCode);
 
 if ($returnCode === 0) {
     logMessage('Deployment successful');

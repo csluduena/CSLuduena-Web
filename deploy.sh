@@ -41,8 +41,21 @@ npm run build
 
 # Copiar archivos construidos al directorio público
 log "Copiando archivos a $DEPLOY_DIR..."
+
+# Crear directorio temporal para los archivos del sitio
+SITE_FILES="/tmp/site_files_$(date +%Y%m%d_%H%M%S)"
+mkdir -p $SITE_FILES
+
+# Copiar solo los archivos del sitio (excluyendo deploy.sh y deploy.php)
+cp -r dist/* $SITE_FILES/
+
+# Mover archivos al directorio público
+log "Moviendo archivos a $DEPLOY_DIR..."
 rm -rf $DEPLOY_DIR/*
-cp -r dist/* $DEPLOY_DIR/
+cp -r $SITE_FILES/* $DEPLOY_DIR/
+
+# Limpiar archivos temporales del sitio
+rm -rf $SITE_FILES
 
 # Limpiar archivos temporales
 rm -rf $TEMP_DIR

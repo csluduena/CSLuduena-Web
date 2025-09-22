@@ -3,7 +3,7 @@
 // Coloca este archivo en la raíz de tu sitio web (public_html)
 
 // Configuración de seguridad
-$secret = '23!@#ClaveSrS1'; // Cambia por una clave secreta
+$secret = '23!@#ClaveSrS1'; // Cambia por una clave secreta!
 $logFile = '/tmp/github_webhook.log';
 
 // Función para logging

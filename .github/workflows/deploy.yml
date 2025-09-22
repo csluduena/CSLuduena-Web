@@ -1,21 +1,26 @@
-name: 🚀 Deploy to Hostinger via FTP
+name: Deploy Website
 
 on:
   push:
     branches:
-    - main # Se ejecuta cuando pusheas a main
+    - main # o la rama que uses
 
 jobs:
-  deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 📥 Checkout del código
+    - name: Checkout
       uses: actions/checkout@v3
 
-    - name: 📤 Deploy vía FTP a Hostinger
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /home/u931942264/domains/csluduena.com/public_html/
+        protocol: ftp
+        port: 21
+        # desde dónde subir
+        local-dir: ./
+        # a dónde subir en el host
+        server-dir: /public_html/

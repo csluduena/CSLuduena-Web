@@ -4,7 +4,7 @@
 # Este script se ejecuta cuando GitHub envía un webhook
 
 # Configuración
-REPO_URL="https://github.com/csluduena/CSLuduena-Web.git"  # Cambia por tu repositorio
+REPO_URL="https://github.com/csluduena/CSLuduena-Web.git"
 DEPLOY_DIR="/public_html"
 BACKUP_DIR="/public_html_backup"
 LOG_FILE="/tmp/deploy.log"
@@ -32,30 +32,17 @@ log "Clonando repositorio..."
 cd $TEMP_DIR
 git clone $REPO_URL .
 
-# Instalar dependencias y construir el proyecto
-log "Instalando dependencias..."
-npm install
-
-log "Construyendo proyecto..."
-npm run build
-
-# Copiar archivos construidos al directorio público
+# Copiar archivos del proyecto al directorio público
 log "Copiando archivos a $DEPLOY_DIR..."
 
-# Crear directorio temporal para los archivos del sitio
-SITE_FILES="/tmp/site_files_$(date +%Y%m%d_%H%M%S)"
-mkdir -p $SITE_FILES
-
-# Copiar solo los archivos del sitio (excluyendo deploy.sh y deploy.php)
-cp -r dist/* $SITE_FILES/
-
-# Mover archivos al directorio público
-log "Moviendo archivos a $DEPLOY_DIR..."
+# Copiar archivos del proyecto (excluyendo deploy.sh y deploy.php)
+log "Copiando archivos del proyecto..."
 rm -rf $DEPLOY_DIR/*
-cp -r $SITE_FILES/* $DEPLOY_DIR/
+cp -r $TEMP_DIR/* $DEPLOY_DIR/
 
-# Limpiar archivos temporales del sitio
-rm -rf $SITE_FILES
+# Limpiar archivos de deploy del directorio público
+rm -f $DEPLOY_DIR/deploy.sh
+rm -f $DEPLOY_DIR/deploy.php
 
 # Limpiar archivos temporales
 rm -rf $TEMP_DIR
